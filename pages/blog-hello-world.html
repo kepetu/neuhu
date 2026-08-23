@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello, World</title>
+  <style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #faf9f7; --text: #1a1a1a; --muted: #6b6b6b;
+  --accent: #2563eb; --border: #e5e5e5; --card: #ffffff;
+  --sans: 'Georgia', serif;
+}
+body { background: var(--bg); color: var(--text); font-family: var(--sans);
+       line-height: 1.75; font-size: 17px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+nav { border-bottom: 1px solid var(--border); background: var(--bg);
+      padding: 20px 0; margin-bottom: 60px; }
+nav .nav-inner { max-width: 800px; margin: 0 auto; display: flex;
+                 justify-content: space-between; align-items: center; }
+nav .logo { font-weight: bold; font-size: 1.2rem; }
+nav ul { display: flex; list-style: none; gap: 30px; }
+main { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+h1 { font-size: 2.5rem; margin: 40px 0 20px; font-weight: 400; }
+h2 { font-size: 1.6rem; margin: 40px 0 20px; font-weight: 400; margin-top: 60px; }
+h3 { font-size: 1.2rem; margin: 20px 0 10px; font-weight: 500; }
+p { margin-bottom: 20px; }
+.section-label { color: var(--muted); font-size: 0.9rem; text-transform: uppercase;
+                 letter-spacing: 1px; margin-bottom: 10px; }
+.lead { font-size: 1.1rem; color: var(--muted); margin-bottom: 30px; }
+.card { border: 1px solid var(--border); padding: 25px; border-radius: 8px;
+        margin-bottom: 20px; background: var(--card); }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          gap: 20px; margin-bottom: 20px; }
+blockquote { border-left: 4px solid var(--accent); padding-left: 20px;
+            margin: 30px 0; color: var(--muted); font-style: italic; }
+code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; font-family: monospace;
+       font-size: 0.9rem; }
+pre { background: #f0f0f0; padding: 20px; border-radius: 8px; overflow-x: auto;
+      margin: 20px 0; }
+pre code { background: none; padding: 0; }
+ul { margin-left: 30px; margin-bottom: 20px; }
+ul.plain { list-style: none; margin-left: 0; }
+ul.plain li::before { content: "→ "; margin-right: 10px; color: var(--accent); }
+.tag { display: inline-block; background: #e5e5e5; padding: 4px 10px;
+       border-radius: 4px; font-size: 0.85rem; margin: 5px 8px 5px 0;
+       color: #666; }
+.star { color: #fbbf24; }
+.contact-links { display: flex; flex-direction: column; gap: 12px; margin: 20px 0; }
+.contact-links a { display: inline-block; padding: 10px 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+@media (max-width: 600px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.3rem; }
+  nav ul { gap: 15px; }
+  .grid-2 { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+  
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="index">✦ Alex Chen</a>
+    <ul>
+      <li><a href="blog">Blog</a></li>
+      <li><a href="projects">Projects</a></li>
+      <li><a href="reading">Reading</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  
+<main>
+  <p class="section-label">Blog</p>
+  <h1>Hello, World</h1>
+  <p class="lead">Why I'm starting a blog in 2025</p>
+  
+  <h2>The Motivation</h2>
+  <p>I've been writing code professionally for a decade. I've read hundreds of blog posts, and I've found that the best ones share a quality: they think out loud. They don't pretend to have all the answers, but they do the hard work of explaining how they arrived at theirs.</p>
+  
+  <p>Most technical writing falls into two categories: the tutorial (here's how to build X) and the research paper (here are peer-reviewed findings). Both are valuable. But there's something missing — the gap between "I just learned this" and "here's a polished treatment in a conference talk."</p>
+  
+  <p>This blog is my attempt to fill that gap. It's where I'll write about things I'm learning, systems I'm building, and ideas that I'm still working through.</p>
+  
+  <h2>What You'll Find Here</h2>
+  <p>I'll be writing about:</p>
+  <ul class="plain">
+    <li>Building systems that scale (and scale well)</li>
+    <li>Design patterns and anti-patterns I've discovered</li>
+    <li>The messy reality of shipping software</li>
+    <li>Technical book reviews and notes</li>
+    <li>Occasional adventures in cooking and hiking</li>
+  </ul>
+  
+  <h2>What You Won't</h2>
+  <p>I'm not going to write listicles, hot takes, or framework of the week posts. I'm not here to get Hacker News points (though that would be nice). I'm writing for the person who wants to think deeply about problems and isn't afraid of complexity.</p>
+  
+  <p>If that sounds like you, welcome.</p>
+</main>
+  
+<hr>
+<footer style="text-align:center;color:#6b6b6b;font-family:sans-serif;font-size:.9rem;padding:40px 0">
+  <p>© 2025 Alex Chen.</p>
+</footer>
+
+</body>
+</html>
